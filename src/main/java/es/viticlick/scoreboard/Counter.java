@@ -18,12 +18,12 @@ public class Counter {
 		return new Counter();
 	}
 	
-	public void add(int addition) {
-		this.count += addition;
+	public Counter add(int points) {
+		return Counter.of(this.count + points);
 	}
 
-	public void substract(int substraction) {
-		this.count -= substraction;
+	public Counter substract(int points) {
+		return Counter.of(this.count - points);
 	}
 
 	public int value() {

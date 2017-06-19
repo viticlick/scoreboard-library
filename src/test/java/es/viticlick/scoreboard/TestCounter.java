@@ -17,15 +17,15 @@ public class TestCounter {
 	
 	@Test
 	public void testAddToCounter(){
-		counter.add(5);
-		counter.add(3);
+		counter = counter.add(5);
+		counter = counter.add(3);
 		assertThat(counter.value(), is(8));
 	}
 	
 	@Test
 	public void testSubstractionToCounter(){
-		counter.add(5);
-		counter.substract(2);
+		counter = counter.add(5);
+		counter = counter.substract(2);
 		assertThat(counter.value(), is(3));
 	}
 	
